@@ -7,11 +7,11 @@ import 'counter/counter_screen.dart';
 void main() {
 
 
-// Achtung => BlocObserver can be used to observe all cubits.
+// Note: BlocObserver can be used to observe all cubits.
   BlocOverrides.runZoned(
         () {
           runApp(MyApp());
-      // Use cubits...
+
     },
     blocObserver: MyBlocObserver(),
   );
